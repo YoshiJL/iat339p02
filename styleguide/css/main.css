@@ -85,25 +85,25 @@ nav.local a.active {
   display: inline-block;
   padding: .75rem 1rem;
   border-radius: .25em;
-  border: .25rem solid #76cbf3;
-  color: #76cbf3;
+  border: .25rem solid #ca57a0;
+  color: #ca57a0;
   text-transform: uppercase;
   text-decoration: none;
   transition: background-color .125s;
 }
 .button:hover, .button:focus {
   color: #ffffff;
-  background-color: #76cbf3;
+  background-color: #ca57a0;
 }
 
 .button.accent {
-  border-color: #ca57a0;
-  color: #ca57a0;
+  border-color: #f05b72;
+  color: #f05b72;
 }
 .button.accent:hover,
 .button.accent:focus {
   color: #ffffff;
-  background-color: #ca57a0;
+  background-color: #f05b72;
 }
 
 .button.disabled {
