@@ -85,27 +85,31 @@ nav.local a.active {
   display: inline-block;
   padding: .75rem 1rem;
   border-radius: .25em;
-  background-color: #76cbf3;
-  color: #ffffff;
+  border: .25rem solid #76cbf3;
+  color: #76cbf3;
   text-transform: uppercase;
   text-decoration: none;
   transition: background-color .125s;
 }
 .button:hover, .button:focus {
   color: #ffffff;
-  background-color: #00afec;
+  background-color: #76cbf3;
 }
 
 .button.accent {
-  background-color: #ca57a0;
+  border-color: #ca57a0;
+  color: #ca57a0;
 }
 .button.accent:hover,
 .button.accent:focus {
-  background-color: #f05b72;
+  color: #ffffff;
+  background-color: #ca57a0;
 }
 
 .button.disabled {
-  background-color: #f6f6f6;
+  border-color: #f6f6f6;
+  background-color: transparent;
+  color: #f6f6f6;
   cursor: default;
 }
 
@@ -143,7 +147,10 @@ p, li {
 }
 
 strong > em, em > strong {
-  background-color: #abe1fa;
+  display: inline-block;
+  padding: .1em .2em;
+  background-color: #f05b72;
+  color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -154,6 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle {
   font-weight: bold;
+  color: #76cbf3;
 }
 
 article > *:first-child {
@@ -180,7 +188,7 @@ img.preview {
 /* Header */
 header {
   color: #ffffff;
-  background-color: #76cbf3;
+  background-color: #abe1fa;
 }
 
 header h1 {
