@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Styleguide - P01: Process</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,700,700i|Pathway+Gothic+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="content">
+        <h1>P01: Process</h1>
+      </div>
+
+      <nav>
+        <a href="index.html">Sketches</a>
+        <a class="active" href="styleguide.html">Styleguide</a>
+        <a href="citations.html">Citations</a>
+      </nav>
+    </header>
+
+    <nav class="local">
+      <a href="#patterns">Patterns</a>
+      <a href="#interactive">Interactive Elements</a>
+      <a href="#text">Text Styling</a>
+      <a href="#modules">Modular Elements</a>
+    </nav>
+
+    <div class="content">
+      <section id="patterns">
+        <h2>Patterns</h2>
+
+        <p>Webpages should have a fun, playful design to reinforce that this is a program for kids and youth.</p>
+
+        <p>When possible, use videos and photos of the curriculum "in action" to help communicate the fun atmosphere of the Awana curriculum.</p>
+
+        <p>Animations should be used on all interactive elements.</p>
+
+        <h3>Colours</h3>
+        <div class="colour-palette">
+          <div class="primary">Primary <small>#49b7da</small></div>
+          <div class="primary-light">P &ndash; Light <small>#82e9ff</small></div>
+          <div class="primary-dark">P &ndash; Dark <small>#0087a8</small></div>
+          <div class="secondary">Secondary <small>#e5c64f</small></div>
+          <div class="secondary-light">S &ndash; Light <small>#ffdc58</small></div>
+          <div>Font <small>#444444</small></div>
+          <div class="background">Background <small>#dddddd</small></div>
+        </div>
+
+        <h3>Fonts</h3>
+        <p>Interactive elements use <strong>Pathway Gothic One</strong>.</p>
+        <p>All other elements use Muli.</p>
+
+      </section>
+
+      <section id="interactive">
+        <h2>Interactive Elements</h2>
+
+        <h3>In-Text Links</h3>
+        <p>Click <a href="#">this link</a> for something awesome!</p>
+
+        <h3>Local Navigation</h3>
+        <nav class="local">
+          <a href="#">Introduction</a>
+          <a class="active" href="#">Scope & Sequence</a>
+          <a href="#">Sample Curriculum</a>
+          <a href="#">Purchasing</a>
+        </nav>
+
+        <pre><code>&lt;nav class=&quot;local&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;Introduction&lt;/a&gt;
+  &lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;Scope & Sequence&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Sample Curriculum&lt;/a&gt;
+  &lt;a href=&quot;#&quot;&gt;Purchasing&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+        <h3>Buttons</h3>
+        <a class="button" href="#">Standard Button</a>
+        <a class="button accent" href="#">Accented Button</a>
+        <a class="button disabled">Disabled Button</a>
+
+        <pre><code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Standard Button&lt;/a&gt;
+&lt;a class=&quot;button accent&quot; href=&quot;#&quot;&gt;Accented Button&lt;/a&gt;
+&lt;a class=&quot;button disabled&quot;&gt;Disabled Button&lt;/a&gt;</code></pre>
+
+        <h3>Form Text Input</h3>
+        <form>
+          <div class="field">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" placeholder="" />
+          </div>
+        </form>
+
+        <pre><code>&lt;form&gt;
+  &lt;div class=&quot;field&quot;&gt;
+    &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; placeholder=&quot;&quot; /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+      </section>
+
+      <section id="text">
+        <h2>Text Styling</h2>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sodales sem, sed aliquet orci bibendum quis. Praesent id nisl ullamcorper, efficitur neque sed, aliquam purus. Curabitur sodales mauris sed risus feugiat, quis ullamcorper velit rhoncus. Curabitur nec laoreet ante. Donec ligula urna, laoreet in mauris sed, iaculis ullamcorper velit. Nunc ullamcorper ante a velit accumsan dictum. Donec pharetra, quam pretium iaculis varius, sem leo tincidunt risus, eget eleifend turpis odio vel lorem. Aliquam erat volutpat.
+        </p>
+
+        <p><em>This sentence is emphasised.</em></p>
+        <p><strong>This sentence is important!</strong></p>
+        <p><strong><em>This sentence is really important.</em></strong></p>
+
+        <pre><code>&lt;p&gt;&lt;em&gt;This sentence is emphasised.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This sentence is important!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This sentence is really important.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</code></pre>
+
+        <h3>Lists</h3>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ol>
+      </section>
+
+      <section id="modules">
+        <h2>Modular Elements</h2>
+
+        <h3>Program Listing</h3>
+        <section class="grid">
+          <article id="tt" class="size1of2">
+              <h2>T&T</h2>
+              <p class="subtitle">For Grades 3&ndash;6.</p>
+              <p>T&T, Truth & Training, ushers preteens on a journey to know God and His Word, love and need their Savior, and live out their faith in the ever-changing world around them. Featuring 30 lessons each year, this curriculum can launch your outreach efforts and deepen your discipleship as it equips your leaders and challenges your kids to understand, retain, and apply His Truth!</p>
+          </article>
+
+          <article class="size1of2">
+            <nav class="local">
+              <a href="#tt">Scope & Sequence</a>
+              <a class="active" href="#tt">For Kids</a>
+              <a href="#tt">For Leaders</a>
+            </nav>
+
+            <h3>Handbooks</h3>
+            <p>
+              <img class="preview" src="http://store.awanacanada.ca/on/demandware.static/-/Sites-master-catalog/default/dw6c6ce60f/images/large/grace-in-action-handbook-t-and-t-350.jpg" />
+              <img class="preview" src="http://store.awanacanada.ca/on/demandware.static/-/Sites-master-catalog/default/dwc8fc166c/images/large/evidence-of-grace-handbook-350.jpg" />
+            </p>
+
+            <p><a class="button" href="http://store.awanacanada.ca/kids-clubs/kids-clubs-t-and-t/" target="_blank">Purchase Now</a></p>
+          </article>
+        </section>
+
+        <pre><code>&lt;section class=&quot;grid&quot;&gt;
+  &lt;article id=&quot;tt&quot; class=&quot;size1of2&quot;&gt;
+    &lt;h2&gt;T&amp;T&lt;/h2&gt;
+    &lt;p class=&quot;subtitle&quot;&gt;For Grades 3&amp;ndash;6.&lt;/p&gt;
+    &lt;p&gt;. . .&lt;/p&gt;
+  &lt;/article&gt;
+  
+  &lt;article class=&quot;size1of2&quot;&gt;
+    &lt;nav class=&quot;local&quot;&gt;
+      &lt;a href=&quot;#tt&quot;&gt;Scope &amp; Sequence&lt;/a&gt;
+      &lt;a class=&quot;active&quot; href=&quot;#tt&quot;&gt;For Kids&lt;/a&gt;
+      &lt;a href=&quot;#tt&quot;&gt;For Leaders&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;h3&gt;Handbooks&lt;/h3&gt;
+    &lt;p&gt;
+      &lt;img class=&quot;preview&quot; src=&quot;http://linkto.jpg&quot; /&gt;
+      &lt;img class=&quot;preview&quot; src=&quot;http://linkto.jpg&quot; /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;a class=&quot;button&quot; href=&quot;http://linkto.page&quot; target=&quot;_blank&quot;&gt;Purchase Now&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+
+        <h3>Grid Structure</h3>
+
+        <section class="grid">
+          <article class="size1of1">
+            <h4>1-column article</h4>
+            <p>
+              Lorem Ipsum
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna vel augue posuere lobortis. Nulla congue lobortis consectetur. Mauris blandit pretium nulla, et egestas ligula efficitur id. Praesent a mi vitae augue posuere auctor sed vel nisl. Aliquam in tincidunt ligula. Phasellus aliquet, nisl eu eleifend sagittis, augue nisi aliquet turpis, in scelerisque nisi sem eu mauris. Donec eu leo eu magna fermentum porttitor at id augue. In dignissim erat sit amet ipsum fringilla, nec dignissim ex accumsan. Cras non tempus sem. Fusce ullamcorper aliquet metus id tincidunt. Etiam euismod, urna eu eleifend consectetur, eros sem elementum tellus, at mollis lacus massa non justo. Curabitur felis lectus, gravida in dolor nec, laoreet sagittis lectus. Aliquam hendrerit, risus sed vestibulum aliquam, risus eros porttitor nisi, at dictum libero enim eu ante.
+            </p>
+          </article>
+
+        </section>
+        <section class="grid">
+
+          <article class="size1of2">
+            <h4>2-column article</h4>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin elementum nec neque nec finibus. Suspendisse rutrum feugiat leo, nec ultrices nunc dignissim sit amet. Integer ultricies venenatis neque vitae posuere. Quisque orci risus, viverra at pharetra vitae, scelerisque nec ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sagittis consectetur ultrices. Duis dictum, dui et sodales faucibus, est mauris condimentum leo, et congue nulla justo a ligula. In hac habitasse platea dictumst. Nunc vestibulum metus non viverra egestas.</p>
+          </article>
+          <article class="size1of2">
+            <h4>2-column article</h4>
+            <p>Nunc in turpis porta, pharetra risus ac, suscipit ante. Donec eget sapien ornare, mollis neque et, euismod tortor. Suspendisse porta faucibus purus. Proin faucibus turpis iaculis eros vestibulum, sed ultricies tortor blandit. Nunc nec diam a dui consectetur dignissim. Mauris elementum tempus urna, sit amet congue leo mattis et. Duis a eros commodo massa congue fringilla a vel ante. Aliquam ex risus, luctus vel lacinia rutrum, tincidunt et justo. Integer ultrices lectus eu dui volutpat rhoncus. Aliquam erat volutpat.</p>
+          </article>
+
+        </section>
+        <section class="grid">
+
+          <article class="size1of3">
+            <h4>3-column article</h4>
+            <p>Ut et metus dolor. Phasellus vulputate, arcu non ultrices facilisis, quam dui tempor libero, ut blandit enim nisl sit amet nisl. Cras rhoncus risus at ante dapibus, sit amet mollis turpis accumsan. Proin et velit quis ipsum euismod rhoncus ac et augue. Praesent finibus risus ipsum, sit amet eleifend est condimentum nec. Praesent lobortis odio a tristique vehicula. Donec venenatis tellus eros, in convallis tellus gravida et. Praesent eu elit vitae nulla tristique varius. Aliquam nulla purus, efficitur sed faucibus vitae, tincidunt eu libero. Quisque euismod feugiat lorem et ullamcorper. Nunc et diam et sem venenatis consectetur eget eu erat.</p>
+          </article>
+          <article class="size1of3">
+            <h4>3-column article</h4>
+            <p>Aliquam nec tortor sed justo tempus mattis. Mauris ut auctor risus. Proin leo nunc, fringilla sit amet sollicitudin a, porta in eros. Suspendisse semper, nulla quis sodales lobortis, magna tellus mattis purus, vel volutpat purus arcu et quam. Cras eget finibus orci. Sed condimentum quam orci, non pharetra metus laoreet ut. Mauris id odio gravida, sollicitudin felis sit amet, venenatis dolor. Morbi sed imperdiet felis, suscipit scelerisque est. Maecenas imperdiet suscipit condimentum. Vestibulum quis vestibulum risus, volutpat lobortis felis.</p>
+          </article>
+          <article class="size1of3">
+            <h4>3-column article</h4>
+            <p>Sed auctor leo sit amet vehicula feugiat. Integer tristique eleifend placerat. Ut et ante non elit lacinia consequat ac in lectus. Nunc sed ex aliquet, vestibulum erat vitae, rhoncus nunc. Suspendisse eleifend velit a eros mattis dignissim sed ut dui. Donec in aliquam mauris. Etiam viverra pharetra diam, in finibus purus condimentum vitae. Ut interdum metus dolor, ac lacinia est scelerisque a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec quis erat non sem cursus congue. Vivamus eget pulvinar libero. Aenean id eros vehicula, laoreet mi nec, feugiat libero. Cras sodales neque quis libero rutrum, a placerat neque tempus.</p>
+          </article>
+        </section>
+
+      </section>
+    </div>
+
+    <footer>
+      <div class="content">
+        Created by <a href="http://joblee.ca">Job Lee</a>. For IAT 339 Web Design and Development.
+      </div>
+    </footer>
+
+  </body>
+</html>

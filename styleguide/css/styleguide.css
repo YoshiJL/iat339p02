@@ -1,0 +1,19 @@
+.colour-palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colour-palette div {
+  flex: 1;
+  padding: .5rem .75rem;
+}
+
+/* Colours */
+.colour-palette .primary { background-color: #49b7da; }
+.colour-palette .primary-light { background-color: #82e9ff; }
+.colour-palette .primary-dark { background-color: #0087a8; }
+.colour-palette .secondary { background-color: #e5c64f; }
+.colour-palette .secondary-light { background-color: #ffdc58; }
+.colour-palette .background { background-color: #dddddd; }
+
+.colour-palette [class$="-dark"] {color: #ffffff; }
