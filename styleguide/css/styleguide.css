@@ -8,12 +8,16 @@
   padding: .5rem .75rem;
 }
 
-/* Colours */
-.colour-palette .primary { background-color: #49b7da; }
-.colour-palette .primary-light { background-color: #82e9ff; }
-.colour-palette .primary-dark { background-color: #0087a8; }
-.colour-palette .secondary { background-color: #e5c64f; }
-.colour-palette .secondary-light { background-color: #ffdc58; }
-.colour-palette .background { background-color: #dddddd; }
+.colour-palette small {
+  font-weight: bold;
+}
 
-.colour-palette [class$="-dark"] {color: #ffffff; }
+/* Colours */
+.colour-palette .primary { background-color: #76cbf3; }
+.colour-palette .primary-light { background-color: #abe1fa; }
+.colour-palette .primary-dark { background-color: #00afec; }
+.colour-palette .secondary { background-color: #ca57a0; }
+.colour-palette .secondary-light { background-color: #f05b72; }
+.colour-palette .background { background-color: #f6f6f6; }
+
+.colour-palette [class]:not(.background) {color: #ffffff; }
