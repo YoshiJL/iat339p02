@@ -1,0 +1,9 @@
+[class^='grid-col-'] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.grid-col-1of3 {
+	width: 33.33333%;
+}
