@@ -66,6 +66,8 @@ nav a {
 nav a:first-child { margin-left: 0; }
 nav a:last-child { margin-right: 0; }
 
+nav a.accounts { margin-left: auto; }
+
 nav.local a {
   color: #6dcff6;
 }
