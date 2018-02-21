@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Colours */
+.colour-palette .primary { background-color: #6dcff6; }
+.colour-palette .primary-light { background-color: #abe1fa; }
+.colour-palette .primary-dark { background-color: #00afec; }
+.colour-palette .secondary { background-color: #f68b1e; }
+.colour-palette .secondary-light { background-color: #fdb92d; }
+.colour-palette .background { background-color: #f6f6f6; }
+
+.colour-palette [class]:not(.background) {color: #ffffff; }
+
+/* Fonts */
+html, body {
+  font-family: 'Fira Sans', sans-serif;
+  color: #999999;
+}
+nav, .button {
+  font-weight: bold;
+}
+
+/**** STRUCTURE ****/
+.content, nav {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+}
+
+/**** INTERACTIVE ****/
+/* Links */
+a {
+  border-bottom: .1rem solid;
+  color: #6dcff6;
+  text-decoration: none;
+  transition: all .125s;
+}
+
+a:hover, a:focus {
+  color: #abe1fa;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+}
+
+nav.local {
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-bottom: #6dcff6 solid .1rem;
+}
+
+nav a {
+  display: block;
+  margin: 0 1rem;
+  padding: .75rem 0;
+  border-bottom: transparent solid 0;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .125s;
+}
+
+nav a:first-child { margin-left: 0; }
+nav a:last-child { margin-right: 0; }
+
+nav.local a {
+  color: #6dcff6;
+}
+
+nav a:hover, nav a:focus, nav a.active {
+  color: #f68b1e;
+  padding-bottom: .45rem;
+  border-bottom: #f68b1e solid .3rem;
+}
+
+nav.local a:hover, nav.local a:focus {
+  padding-bottom: .75rem;
+  border-bottom: none;
+}
+
+
+nav.local a.active {
+  color: #f68b1e;
+  padding-bottom: .45rem;
+  border-bottom: #6dcff6 solid .3rem;
+}
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: .75rem 1rem;
+  border-radius: .25em;
+  border: .25rem solid #f68b1e;
+  color: #f68b1e;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .125s;
+}
+.button:hover, .button:focus {
+  color: #ffffff;
+  background-color: #f68b1e;
+}
+
+.button.accent {
+  border-color: #fdb92d;
+  color: #fdb92d;
+}
+.button.accent:hover,
+.button.accent:focus {
+  color: #ffffff;
+  background-color: #fdb92d;
+}
+
+.button.disabled {
+  border-color: #f6f6f6;
+  background-color: transparent;
+  color: #f6f6f6;
+  cursor: default;
+}
+
+/* Form Text Input */
+.field {
+  margin: 1rem .5rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  padding: .5rem;
+  border: #bbbbbb solid .1rem;
+  border-radius: .25rem;
+  transition: all .125s;
+}
+.field input:hover {
+  border-color: #abe1fa;
+}
+.field input:focus {
+  outline: none;
+  border-color: #00afec;
+}
+
+/**** TEXT STYLING ****/
+p, li {
+  line-height: 1.4em;
+}
+
+strong > em, em > strong {
+  display: inline-block;
+  padding: .1em .2em;
+  background-color: #fdb92d;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #6dcff6;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: #6dcff6;
+}
+
+article > *:first-child {
+  margin-top: 1rem;
+}
+
+pre {
+  padding: 1rem;
+  background-color: #f6f6f6;
+  border-radius: .25rem;
+  overflow: auto;
+}
+
+/**** MEDIA STYLING ****/
+iframe, img {
+  border: #f6f6f6 solid .1rem;
+}
+
+img.preview {
+  max-width: 10rem;
+}
+
+/**** MODULAR ELEMENTS ****/
+/* Header */
+header {
+  color: #ffffff;
+  background-color: #6dcff6;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+header .content {
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 5rem;
+  padding: 1rem 0;
+  background-color: #f6f6f6;
+}
+
+footer .content {
+  font-size: 90%;
+}
+
+/* Grids */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid > [class^="size"] {
+  margin: 0 1rem 1rem 0;
+  width: 100%;
+}
+
+.grid .size1of1 { flex: 3 40rem; max-width: 40rem; }
+.grid .size1of2 { flex: 2 20rem; max-width: 20rem; }
+.grid .size1of3 { flex: 1 18rem; max-width: 18rem; }
+.grid .size2of3 { flex: 1 36rem; max-width: 36rem; }
