@@ -17,7 +17,7 @@ html, body {
   font-family: 'Fira Sans', sans-serif;
   color: #999999;
 }
-nav, .button {
+nav, .button, button {
   font-weight: bold;
 }
 
@@ -92,32 +92,37 @@ nav.local a.active {
 
 
 /* Buttons */
-.button {
+.button, button {
   display: inline-block;
   padding: .75rem 1rem;
   border-radius: .25em;
-  border: .25rem solid #f68b1e;
+  border: .125rem solid;
+  border-color: #f68b1e;
   color: #f68b1e;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color .125s;
+  transition: background-color .125s, border-color .125s;
 }
-.button:hover, .button:focus {
+button {
+  padding: .5rem .75rem;
+  background-color: transparent;
+}
+.button:hover, .button:focus, button:hover, button:focus {
   color: #ffffff;
   background-color: #f68b1e;
 }
 
-.button.accent {
+.button.accent, button.accent {
   border-color: #fdb92d;
   color: #fdb92d;
-}
-.button.accent:hover,
-.button.accent:focus {
+}``
+.button.accent:hover, .button.accent:focus
+button.accent:hover, button.accent:focus {
   color: #ffffff;
   background-color: #fdb92d;
 }
 
-.button.disabled {
+.button.disabled, button.disabled {
   border-color: #f6f6f6;
   background-color: transparent;
   color: #f6f6f6;
@@ -125,20 +130,26 @@ nav.local a.active {
 }
 
 /* Form Text Input */
+form {
+  margin: 0 .5rem;
+}
+
 .field {
-  margin: 1rem .5rem;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .field label {
   display: block;
   margin-bottom: .5rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .field input {
   display: block;
   width: 100%;
-  max-width: 40rem;
   padding: .5rem;
   border: #bbbbbb solid .1rem;
   border-radius: .25rem;
@@ -150,6 +161,10 @@ nav.local a.active {
 .field input:focus {
   outline: none;
   border-color: #00afec;
+}
+
+form .nav {
+  text-align: right;
 }
 
 /**** TEXT STYLING ****/
@@ -187,12 +202,16 @@ pre {
 }
 
 /**** MEDIA STYLING ****/
-iframe, img {
+iframe {
   border: #f6f6f6 solid .1rem;
 }
 
 img.preview {
   max-width: 10rem;
+}
+
+img.thumbnail {
+  max-height: 8rem;
 }
 
 /**** MODULAR ELEMENTS ****/
@@ -212,7 +231,6 @@ header .content {
 
 /* Footer */
 footer {
-  margin-top: 5rem;
   padding: 1rem 0;
   background-color: #f6f6f6;
 }
@@ -235,3 +253,25 @@ footer .content {
 .grid .size1of2 { flex: 2 20rem; max-width: 20rem; }
 .grid .size1of3 { flex: 1 18rem; max-width: 18rem; }
 .grid .size2of3 { flex: 1 36rem; max-width: 36rem; }
+
+/* Call to Actions */
+.cta {
+  padding: 1rem .5rem;
+  color: #ffffff;
+  background-color: #00afec;
+  text-align: center;
+}
+
+.cta h1, .cta h2, .cta h3, .cta h4, .cta h5, .cta h6 {
+  color: #ffffff;
+}
+
+.cta button, .cta .button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.cta button:hover, .cta button:focus,
+.cta .button:hover, .cta .button:focus {
+  border-color: #f68b1e;
+}
