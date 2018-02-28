@@ -6,8 +6,8 @@
 .colour-palette .primary { background-color: #6dcff6; }
 .colour-palette .primary-light { background-color: #abe1fa; }
 .colour-palette .primary-dark { background-color: #00afec; }
-.colour-palette .secondary { background-color: #f68b1e; }
-.colour-palette .secondary-light { background-color: #fdb92d; }
+.colour-palette .secondary { background-color: #ca57a0; }
+.colour-palette .secondary-light { background-color: #f05b72; }
 .colour-palette .background { background-color: #f6f6f6; }
 
 .colour-palette [class]:not(.background) {color: #ffffff; }
@@ -22,7 +22,7 @@ nav, .button, button {
 }
 
 /**** STRUCTURE ****/
-.content, nav {
+.content, nav, header .container, .hero .container {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 60rem;
@@ -54,7 +54,7 @@ nav.local {
 
 nav a {
   display: block;
-  margin: 0 1rem;
+  margin: 0 .75rem;
   padding: .75rem 0;
   border-bottom: transparent solid 0;
   color: #ffffff;
@@ -73,9 +73,9 @@ nav.local a {
 }
 
 nav a:hover, nav a:focus, nav a.active {
-  color: #f68b1e;
+  color: #ca57a0;
   padding-bottom: .45rem;
-  border-bottom: #f68b1e solid .3rem;
+  border-bottom: #ca57a0 solid .3rem;
 }
 
 nav.local a:hover, nav.local a:focus {
@@ -85,7 +85,7 @@ nav.local a:hover, nav.local a:focus {
 
 
 nav.local a.active {
-  color: #f68b1e;
+  color: #ca57a0;
   padding-bottom: .45rem;
   border-bottom: #6dcff6 solid .3rem;
 }
@@ -97,8 +97,8 @@ nav.local a.active {
   padding: .75rem 1rem;
   border-radius: .25em;
   border: .125rem solid;
-  border-color: #f68b1e;
-  color: #f68b1e;
+  border-color: #ca57a0;
+  color: #ca57a0;
   text-transform: uppercase;
   text-decoration: none;
   transition: background-color .125s, border-color .125s;
@@ -109,17 +109,17 @@ button {
 }
 .button:hover, .button:focus, button:hover, button:focus {
   color: #ffffff;
-  background-color: #f68b1e;
+  background-color: #ca57a0;
 }
 
 .button.accent, button.accent {
-  border-color: #fdb92d;
-  color: #fdb92d;
+  border-color: #f05b72;
+  color: #f05b72;
 }``
 .button.accent:hover, .button.accent:focus
 button.accent:hover, button.accent:focus {
   color: #ffffff;
-  background-color: #fdb92d;
+  background-color: #f05b72;
 }
 
 .button.disabled, button.disabled {
@@ -175,7 +175,7 @@ p, li {
 strong > em, em > strong {
   display: inline-block;
   padding: .1em .2em;
-  background-color: #fdb92d;
+  background-color: #f05b72;
   color: #ffffff;
 }
 
@@ -188,10 +188,6 @@ h1, h2, h3, h4, h5, h6 {
 .subtitle {
   font-weight: bold;
   color: #6dcff6;
-}
-
-article > *:first-child {
-  margin-top: 1rem;
 }
 
 pre {
@@ -221,12 +217,27 @@ header {
   background-color: #6dcff6;
 }
 
+header .container {
+  display: flex;
+  align-items: center;
+}
+
 header h1 {
+  margin: 0;
   color: #ffffff;
 }
 
+header img.logo {
+  max-width: 100%;
+  max-height: 2.5rem;
+}
+
 header .content {
-  padding: 1rem;
+  padding: 1.25rem 2.5rem 1rem 2rem
+}
+
+header nav {
+  flex: 1;
 }
 
 /* Footer */
@@ -239,6 +250,39 @@ footer .content {
   font-size: 90%;
 }
 
+/* Hero */
+.hero {
+  background: url("https://www.kumon.com/assets/images/home_header_img.jpg") center center/cover no-repeat;
+  color: #ffffff;
+}
+
+.hero .content {
+  margin-top: 0;
+  font-size: 125%;
+  padding: 15vh 0;
+  max-width: 35rem;
+  text-align: center;
+}
+
+@media (max-width: 923px) {
+  .hero .content {
+    float: none;
+  }
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  clear: right;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0.1em 0.1em 1em rgba(0,0,0,.5);
+  text-transform: uppercase;
+}
+
 /* Grids */
 .grid {
   display: flex;
@@ -249,10 +293,10 @@ footer .content {
   width: 100%;
 }
 
-.grid .size1of1 { flex: 3 40rem; max-width: 40rem; }
-.grid .size1of2 { flex: 2 20rem; max-width: 20rem; }
-.grid .size1of3 { flex: 1 18rem; max-width: 18rem; }
-.grid .size2of3 { flex: 1 36rem; max-width: 36rem; }
+.grid .size1of1 { flex: 3 40rem; }
+.grid .size1of2 { flex: 2 20rem; }
+.grid .size1of3 { flex: 1 18rem; }
+.grid .size2of3 { flex: 1 36rem; }
 
 /* Call to Actions */
 .cta {
@@ -263,7 +307,12 @@ footer .content {
 }
 
 .cta h1, .cta h2, .cta h3, .cta h4, .cta h5, .cta h6 {
+  margin: 1em 0;
   color: #ffffff;
+}
+
+.cta .content :first-child, .cta .content :last-child {
+  margin-top: 0;
 }
 
 .cta button, .cta .button {
@@ -273,5 +322,9 @@ footer .content {
 
 .cta button:hover, .cta button:focus,
 .cta .button:hover, .cta .button:focus {
-  border-color: #f68b1e;
+  border-color: #ca57a0;
+}
+
+.cta > *:first-child {
+  margin-top: 1rem;
 }
