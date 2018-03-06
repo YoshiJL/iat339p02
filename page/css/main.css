@@ -66,7 +66,7 @@ nav a {
 nav a:first-child { margin-left: 0; }
 nav a:last-child { margin-right: 0; }
 
-nav a.accounts { margin-left: auto; }
+nav a.last { margin-left: auto; }
 
 nav.local a {
   color: #6dcff6;
@@ -83,13 +83,35 @@ nav.local a:hover, nav.local a:focus {
   border-bottom: none;
 }
 
-
 nav.local a.active {
   color: #ca57a0;
   padding-bottom: .45rem;
   border-bottom: #6dcff6 solid .3rem;
 }
 
+header nav .menu-toggle { display: none; }
+header.collapsed .container { display: block; }
+header.collapsed nav { display: block; }
+header.collapsed nav .menu-toggle { display: block; }
+header.collapsed nav a:not(.menu-toggle) { display: none; }
+
+header.collapsed nav.opened a {
+  display: block;
+}
+
+nav .menu-toggle {
+  position: relative;
+}
+
+nav .menu-toggle span {
+  position: absolute;
+  transform: translateY(-100%);
+  transition: opacity .25s;
+}
+
+nav .menu-toggle .nav-close { opacity: 0; }
+nav.opened .menu-toggle .nav-open { opacity: 0; }
+nav.opened .menu-toggle .nav-close { opacity: 1; }
 
 /* Buttons */
 .button, button {
