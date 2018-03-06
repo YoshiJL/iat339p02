@@ -13,7 +13,7 @@ function toggleNav() {
 
 // collapse navigation bar if navigation greater that normal height
 function navResize() {
-  if (screen.width < minNavWidth) {
+  if (window.innerWidth < minNavWidth) {
     mainHeader.classList.add("collapsed");
   } else {
     mainHeader.classList.remove("collapsed");

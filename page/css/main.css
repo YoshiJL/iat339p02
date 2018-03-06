@@ -281,7 +281,7 @@ footer .content {
 .hero .content {
   margin-top: 0;
   font-size: 125%;
-  padding: 15vh 0;
+  padding: 15vh 1rem;
   max-width: 35rem;
   text-align: center;
 }
