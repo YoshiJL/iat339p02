@@ -3,6 +3,7 @@
 var mainNav = document.getElementById("main-nav");
 var navToggle = document.getElementById("nav-toggle");
 var mainHeader = document.getElementById("main-header");
+var minNavWidth = 810;
 
 
 // toggle Navigation
@@ -12,7 +13,7 @@ function toggleNav() {
 
 // collapse navigation bar if navigation greater that normal height
 function navResize() {
-  if (screen.width < 810) {
+  if (screen.width < minNavWidth) {
     mainHeader.classList.add("collapsed");
   } else {
     mainHeader.classList.remove("collapsed");
