@@ -89,24 +89,50 @@ nav.local a.active {
   border-bottom: #6dcff6 solid .3rem;
 }
 
+header.collapsed nav a:hover,
+header.collapsed nav a:focus,
+header.collapsed nav a.active {
+  color: #ca57a0;
+  padding-left: .45rem;
+  padding-bottom: .75rem;
+  border-left: #ca57a0 solid .3rem;
+  border-bottom: none;
+}
+
+header.collapsed nav.local a:hover,
+header.collapsed nav.local a:focus {
+  padding-left: .75rem;
+  border-left: none;
+  border-bottom: none;
+}
+
+
 header nav .menu-toggle { display: none; }
 header.collapsed .container { display: block; }
 header.collapsed nav { display: block; }
 header.collapsed nav .menu-toggle { display: block; }
 header.collapsed nav a:not(.menu-toggle) { display: none; }
 
-header.collapsed nav.opened a {
-  display: block;
-}
+header.collapsed nav.opened a {  display: block; }
+header.collapsed nav.opened a.last {  margin: 0 .75rem; }
+
 
 nav .menu-toggle {
   position: relative;
+  padding-bottom: 2rem;
 }
 
 nav .menu-toggle span {
   position: absolute;
-  transform: translateY(-100%);
   transition: opacity .25s;
+}
+
+header.collapsed nav a.menu-toggle,
+header.collapsed nav a.menu-toggle:hover,
+header.collapsed nav a.menu-toggle:focus {
+  border-left: none;
+  padding-left: .75rem;
+  padding-bottom: 2rem;
 }
 
 nav .menu-toggle .nav-close { opacity: 0; }
@@ -251,8 +277,20 @@ header h1 {
 
 header img.logo {
   max-width: 100%;
-  max-height: 2.5rem;
+  height: 2.5rem;
 }
+
+header a {
+  border-bottom: none;
+}
+
+header a img.static { display: block; }
+header a img.hover { display: none; }
+
+header a:hover img.hover,
+header a:focus img.hover { display: block; }
+header a:hover img.static,
+header a:focus img.static { display: none; }
 
 header .content {
   padding: 1.25rem 2.5rem 1rem 2rem
@@ -278,16 +316,17 @@ footer .content {
   color: #ffffff;
 }
 
-.hero.home { background-image: url("img/home_header_img.jpg"); }
-.hero.math { background-image: url("img/math_header_img.jpg"); }
-.hero.reading { background-image: url("img/reading_header_img.jpg"); }
-.hero.plus { background-image: url("img/plus_header_img.jpg"); }
-.hero.contact { background-image: url("img/contact_header_img.jpg"); }
+.hero { background-image: url("../img/kumon1.jpg"); }
+.hero.home { background-image: url("../img/home_header_img.jpg"); }
+.hero.math { background-image: url("../img/math_header_img.jpg"); }
+.hero.reading { background-image: url("../img/reading_header_img.jpg"); }
+.hero.plus { background-image: url("../img/plus_header_img.jpg"); }
+.hero.contact { background-image: url("../img/contact_header_img.jpg"); }
 
 .hero .content {
   margin-top: 0;
   font-size: 125%;
-  padding: 15vh 1rem;
+  padding: 25vh 1rem;
   max-width: 35rem;
   text-align: center;
 }

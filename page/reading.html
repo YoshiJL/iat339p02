@@ -2,113 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Our Programs - Kumon</title>
+    <title>Reading - Kumon</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
 
   <body class="landing">
-    <header>
+    <header id="main-header" class="">
       <div class="container">
         <div class="content">
-          <h1><img class="logo" src="img/kumon-logo.svg" alt="Kumon" /></h1>
+          <h1><a href="index.html"><img class="logo" src="img/kumon-logo.svg" alt="Kumon" /></a></h1>
         </div>
 
-        <nav>
+        <nav id="main-nav">
+          <a id="nav-toggle" class="menu-toggle" href="#"><span class="nav-open">Menu</span><span class="nav-close">Close</span></a>
           <a href="index.html">Home</a>
           <a href="about-us.html">About Us</a>
-          <a class="active" href="programs.html">Programs</a>
-          <a href="enrollment.html">Enrollment</a>
-          <a class="accounts" href="mykumon.html">My Kumon</a>
+          <a href="math.html">Math</a>
+          <a class="active" href="reading.html">Reading</a>
+          <a class="last" href="enrollment.html">Enroll</a>
         </nav>
       </div>
     </header>
 
-    <nav class="local">
-      <a href="#math">Math</a>
-      <a href="#reading">Reading</a>
-    </nav>
-
+    <article class="hero reading">
+      <div class="content">
+        <h1>Reading</h1>
+      </div>
+    </article>
 
 
     <div class="content">
-      <article id="math">
-          <h2>Math</h2>
-          <img src="img/math.png" alt="Math">
-          <p>Daily Kumon Math Worksheets will take about 30 minutes to complete in two sessions a week at a Kumon Centre, and then another five assignments to be completed at home. Your child will work at his or her own pace, mastering each new concept before moving on. With each worksheet, you’ll find your child accelerating important math skills.</p>
-      </article>
-
       <article>
-        <h3>Age 3 - 5</h3>
-
-        <div class="grid">
-          <section class="size1of3">
-            <h4>Build your child’s math skills from an early age</h4>
-            <p>Before beginning elementary school is the perfect time to give your child a head start in Math. Kumon’s engaging worksheets begin developing initial math skills, including counting and number sequencing.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>You and the instructor are there to guide your child</h4>
-            <p>At the Kumon Centre, your child's instructor will be ready to guide and assist with worksheets. At home, you’ll help and oversee your child’s progress, until self-learning begins.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>As your child’s knowledge grows, so will a valuable sense of accomplishment</h4>
-            <p>You'll watch your child develop mental calculation skills, improve concentration ability and boost critical thinking skills with each new lesson.</p>
-          </section>
-        </div>
-      </article>
-
-
-      <article>
-        <h3>Age 6 - 12</h3>
-
-        <div class="grid">
-          <section class="size1of3">
-            <h4>Give your child an academic advantage in math</h4>
-            <p>The Kumon Math Program will advance math skills by deepening ability and understanding. Ultimately, these skills become a foundation of knowledge to draw on throughout school.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>Your child’s learning advances step by step</h4>
-            <p>Each math worksheet is one step more advanced than the one before, ensuring your child fully absorbs and learns each math concept before moving on to the next.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>You’ll watch your child’s knowledge advance and grow</h4>
-            <p>As your child advances through the Kumon Math Program worksheets, you’ll know it’s in preparation to excel in middle school, high school, and throughout life.</p>
-          </section>
-        </div>
-      </article>
-
-      <article>
-        <h3>Age 13+</h3>
-
-        <div class="grid">
-          <section class="size1of3">
-            <h4>Competing in today’s world takes advanced math skills</h4>
-            <p>As your child enters middle and high school, the Kumon Math Program will solidify and advance math skills, first for university and then a career.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>Your child advances independently, step by step</h4>
-            <p>The self-learning method of the Kumon Math Program will help your child develop a wide range of math skills, for the highest level of math learning.</p>
-          </section>
-
-          <section class="size1of3">
-            <h4>You’ll watch your child acquire vital skills</h4>
-            <p>As your child’s logical thinking advances, you’ll know you’re helping to provide the tools to excel in school – with knowledge that will continue to drive success beyond school.</p>
-          </section>
-        </div>
-      </article>
-
-
-
-
-      <article id="reading">
-        <h2>Reading</h2>
+        <h2>How does our Reading program work</h2>
         <img src="img/reading.png" alt="Reading">
         <p>The Kumon Reading Program is designed to build the critical reading skills that will help your child develop a lifelong love of reading – and a solid foundation for academic success. Daily Reading Worksheets will take about 30 minutes to complete – in two sessions a week at a Kumon Centre, and another five assignments completed at home. Your child will work at his or her own pace, mastering each new reading concept before moving on. With each worksheet, your child’s overall reading and writing skills will advance incrementally.</p>
       </article>
@@ -182,19 +113,21 @@
 
   </div>
 
-  <article class="accent">
-    <div class="content cta">
+  <article class="cta">
+    <div class="content">
       <h2>Interested in the Programs?</h2>
       <p>Are you ready to enroll your child?</p>
-      <a href="enrollment.html" class="button">Enroll></a>
+      <a href="enrollment.html" class="button">Enroll ></a>
     </div>
   </article>
 
   <footer>
     <div class="content">
-      Created by <a href="http://joblee.ca">Job Lee</a> and <a href="#">Gordon Huang</a>. For IAT 339 Web Design and Development.
+      Created by <a href="http://joblee.ca">Job Lee</a> and Gordon Huang. For IAT 339 Web Design and Development | <a href="citations.html">Citations</a> | <a href="styleguide.html">Styleguide</a> | <a target="_blank" href="https://github.com/YoshiJL/iat339p02">Git Repository</a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
   </body>
 </html>

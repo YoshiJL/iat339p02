@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Styleguide - Kumon</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  </head>
+
+  <body class="landing">
+    <header id="main-header" class="">
+      <div class="container">
+        <div class="content">
+          <h1><a href="index.html"><img class="logo" src="img/kumon-logo.svg" alt="Kumon" /></a></h1>
+        </div>
+
+        <nav id="main-nav">
+          <a id="nav-toggle" class="menu-toggle" href="#"><span class="nav-open">Menu</span><span class="nav-close">Close</span></a>
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="math.html">Math</a>
+          <a href="reading.html">Reading</a>
+          <a class="last" href="enrollment.html">Enroll</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <h1>Styleguide</h1>
+
+      <nav class="local">
+        <a href="#patterns">Patterns</a>
+        <a href="#interactive">Interactive Elements</a>
+        <a href="#text">Text Styling</a>
+        <a href="#modules">Modular Elements</a>
+      </nav>
+
+      <div class="content">
+        <section id="patterns">
+          <h2>Patterns</h2>
+
+          <p>Webpages should have a fun, playful design to reinforce that this is a program for kids and youth.</p>
+
+          <p>Animations should be used on all interactive elements.</p>
+
+          <h3>Colours</h3>
+          <div class="colour-palette">
+            <div class="primary">Primary <small>#6dcff6</small></div>
+            <div class="primary-light">P &ndash; Light <small>#abe1fa</small></div>
+            <div class="primary-dark">P &ndash; Dark <small>#00afec</small></div>
+            <div class="secondary">Secondary <small>#ca57a0</small></div>
+            <div class="secondary-light">S &ndash; Light <small>#f05b72</small></div>
+            <div>Font <small>#999999</small></div>
+            <div class="background">Background <small>#f6f6f6</small></div>
+          </div>
+
+          <h3>Fonts</h3>
+          <p><strong>Fira Sans</strong> will be used for all text. When an element is interactive, uppercase and heavy weight will be used.</p>
+
+        </section>
+
+        <section id="interactive">
+          <h2>Interactive Elements</h2>
+
+          <h3>In-Text Links</h3>
+          <p>Click <a href="#">this link</a> for something awesome!</p>
+
+          <h3>Local Navigation</h3>
+          <nav class="local">
+            <a href="#">Introduction</a>
+            <a class="active" href="#">Scope & Sequence</a>
+            <a href="#">Sample Curriculum</a>
+            <a href="#">Enroll Now</a>
+          </nav>
+
+          <pre><code>&lt;nav class=&quot;local&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Introduction&lt;/a&gt;
+            &lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;Scope & Sequence&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;Sample Curriculum&lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;Enroll Now&lt;/a&gt;
+            &lt;/nav&gt;</code></pre>
+
+          <h3>Buttons</h3>
+          <a class="button" href="#">Standard Button</a>
+          <a class="button accent" href="#">Accented Button</a>
+          <a class="button disabled">Disabled Button</a>
+
+          <pre><code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Standard Button&lt;/a&gt;
+            &lt;a class=&quot;button accent&quot; href=&quot;#&quot;&gt;Accented Button&lt;/a&gt;
+            &lt;a class=&quot;button disabled&quot;&gt;Disabled Button&lt;/a&gt;</code></pre>
+
+          <h3>Form Text Input</h3>
+          <form>
+            <div class="field">
+              <label for="first-name">First Name</label>
+              <input id="first-name" type="text" placeholder="" />
+            </div>
+          </form>
+
+          <pre><code>&lt;form&gt;
+            &lt;div class=&quot;field&quot;&gt;
+            &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+            &lt;input id=&quot;first-name&quot; type=&quot;text&quot; placeholder=&quot;&quot; /&gt;
+            &lt;/div&gt;
+            &lt;/form&gt;</code></pre>
+
+        </section>
+
+        <section id="text">
+          <h2>Text Styling</h2>
+
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sodales sem, sed aliquet orci bibendum quis. Praesent id nisl ullamcorper, efficitur neque sed, aliquam purus. Curabitur sodales mauris sed risus feugiat, quis ullamcorper velit rhoncus. Curabitur nec laoreet ante. Donec ligula urna, laoreet in mauris sed, iaculis ullamcorper velit. Nunc ullamcorper ante a velit accumsan dictum. Donec pharetra, quam pretium iaculis varius, sem leo tincidunt risus, eget eleifend turpis odio vel lorem. Aliquam erat volutpat.
+          </p>
+
+          <p><em>This sentence is emphasised.</em></p>
+          <p><strong>This sentence is important!</strong></p>
+          <p><strong><em>This sentence is really important.</em></strong></p>
+
+          <pre><code>&lt;p&gt;&lt;em&gt;This sentence is emphasised.&lt;/em&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;This sentence is important!&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;&lt;em&gt;This sentence is really important.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</code></pre>
+
+          <h3>Lists</h3>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ol>
+        </section>
+
+        <section id="modules">
+          <h2>Modular Elements</h2>
+
+          <h3>Hero</h3>
+
+          <article class="hero home">
+            <div class="content">
+              <h1>Give your child the academic advantage to compete in today's world</h1>
+              <p>Kumon helps accelerate your child’s learning — from as young as age 3 all the way through high school</p>
+            </div>
+          </article>
+
+          <pre><code>&#x3C;article class=&#x22;hero home&#x22;&#x3E;
+  &#x3C;div class=&#x22;content&#x22;&#x3E;
+    &#x3C;h1&#x3E;Give your child the academic advantage to compete in today&#x27;s world&#x3C;/h1&#x3E;
+    &#x3C;p&#x3E;Kumon helps accelerate your child&#x2019;s learning &#x2014; from as young as age 3 all the way through high school&#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/article&#x3E;</code></pre>
+
+          <h3>Call to Action</h3>
+
+          <article class="cta">
+            <div class="content">
+              <h2>Learn more about what your child will learn.</h2>
+              <p>
+                <a href="math.html" class="button">Math ></a>
+                <a href="reading.html" class="button">Reading ></a>
+              </p>
+            </div>
+          </article>
+
+          <pre><code>&#x3C;article class=&#x22;cta&#x22;&#x3E;
+  &#x3C;div class=&#x22;content&#x22;&#x3E;
+    &#x3C;h2&#x3E;Learn more about what your child will learn.&#x3C;/h2&#x3E;
+    &#x3C;p&#x3E;
+      &#x3C;a href=&#x22;math.html&#x22; class=&#x22;button&#x22;&#x3E;Math &#x3E;&#x3C;/a&#x3E;
+      &#x3C;a href=&#x22;reading.html&#x22; class=&#x22;button&#x22;&#x3E;Reading &#x3E;&#x3C;/a&#x3E;
+    &#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/article&#x3E;</code></pre>
+
+          <h3>Program Listing</h3>
+          <section class="grid">
+            <article id="pl" class="size1of2">
+                <h2>Math Programs</h2>
+                <p class="subtitle">Kumon can take your child from counting to calculus and beyond.</p>
+                <p>Enrolling in the Kumon Math Program will help build and advance your child's math skills, for an advantage in school and beyond.</p>
+                <p>Daily Kumon Math Worksheets will take about 30 minutes to comttete in two sessions a week at a Kumon Centre, and then another five assignments to be comtteted at home. Your child will work at his or her own pace, mastering each new concept before moving on. With each worksheet, you’ll find your child accelerating important math skills. Many Kumon parents ultimately find their children mastering concepts that put them grade levels ahead of their peers.</p>
+            </article>
+
+            <article class="size1of2">
+              <nav class="local">
+                <a href="#pl">Ages 3-5</a>
+                <a class="active" href="#tt">Ages 6-12</a>
+                <a href="#tt">Ages 13+</a>
+              </nav>
+
+              <h3>Give your child an academic advantage in math.</h3>
+
+              <img class="preview" src="https://www.kumon.com/assets/images/math_6-12_ws_bg.png" />
+              <p>
+                As your child progresses through elementary school, the Kumon Math Program will advance math skills by deepening ability and understanding. Ultimately, these skills become a foundation of knowledge to draw on throughout school.
+              </p>
+
+              <p><a class="button" href="https://www.kumon.com/ca-en/math-program" target="_blank">Sample Worksheets</a></p>
+            </article>
+          </section>
+
+          <pre><code>&lt;section class=&quot;grid&quot;&gt;
+            &lt;article id=&quot;tt&quot; class=&quot;size1of2&quot;&gt;
+            &lt;h2&gt;Math Programs&lt;/h2&gt;
+            &lt;p class=&quot;subtitle&quot;&gt;. . .&lt;/p&gt;
+            &lt;p&gt;. . .&lt;/p&gt;
+            &lt;/article&gt;
+
+            &lt;article class=&quot;size1of2&quot;&gt;
+            &lt;nav class=&quot;local&quot;&gt;
+            &lt;a href=&quot;#pl&quot;&gt;Ages 3-5&lt;/a&gt;
+            &lt;a class=&quot;active&quot; href=&quot;#pl&quot;&gt;>Ages 6-1&lt;/a&gt;
+            &lt;a href=&quot;#pl&quot;&gt;Ages 13+&lt;/a&gt;
+            &lt;/nav&gt;
+
+            &lt;h3&gt;Give your child an academic advantage in math.&lt;/h3&gt;
+
+            &lt;img class=&quot;preview&quot; src=&quot;http://linkto.jpg&quot; /&gt;
+
+            &lt;p&gt;. . .&lt;/p&gt;
+
+            &lt;p&gt;
+            &lt;a class=&quot;button&quot; href=&quot;http://linkto.page&quot; target=&quot;_blank&quot;&gt;Sample Worksheets&lt;/a&gt;
+            &lt;/p&gt;
+            &lt;/article&gt;
+            &lt;/section&gt;
+      </code></pre>
+
+          <h3>Grid Structure</h3>
+
+          <section class="grid">
+            <article class="size1of1">
+              <h4>1-column article</h4>
+              <p>
+                Lorem Ipsum
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      "There is no one who loves pain itself, who seeks after it and wants to have it, simtty because it is pain..."
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna vel augue posuere lobortis. Nulla congue lobortis consectetur. Mauris blandit pretium nulla, et egestas ligula efficitur id. Praesent a mi vitae augue posuere auctor sed vel nisl. Aliquam in tincidunt ligula. Phasellus aliquet, nisl eu eleifend sagittis, augue nisi aliquet turpis, in scelerisque nisi sem eu mauris. Donec eu leo eu magna fermentum porttitor at id augue. In dignissim erat sit amet ipsum fringilla, nec dignissim ex accumsan. Cras non tempus sem. Fusce ullamcorper aliquet metus id tincidunt. Etiam euismod, urna eu eleifend consectetur, eros sem elementum tellus, at mollis lacus massa non justo. Curabitur felis lectus, gravida in dolor nec, laoreet sagittis lectus. Aliquam hendrerit, risus sed vestibulum aliquam, risus eros porttitor nisi, at dictum libero enim eu ante.
+              </p>
+            </article>
+
+          </section>
+          <section class="grid">
+
+            <article class="size1of2">
+              <h4>2-column article</h4>
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin elementum nec neque nec finibus. Suspendisse rutrum feugiat leo, nec ultrices nunc dignissim sit amet. Integer ultricies venenatis neque vitae posuere. Quisque orci risus, viverra at pharetra vitae, scelerisque nec ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sagittis consectetur ultrices. Duis dictum, dui et sodales faucibus, est mauris condimentum leo, et congue nulla justo a ligula. In hac habitasse ttatea dictumst. Nunc vestibulum metus non viverra egestas.</p>
+            </article>
+            <article class="size1of2">
+              <h4>2-column article</h4>
+              <p>Nunc in turpis porta, pharetra risus ac, suscipit ante. Donec eget sapien ornare, mollis neque et, euismod tortor. Suspendisse porta faucibus purus. Proin faucibus turpis iaculis eros vestibulum, sed ultricies tortor blandit. Nunc nec diam a dui consectetur dignissim. Mauris elementum tempus urna, sit amet congue leo mattis et. Duis a eros commodo massa congue fringilla a vel ante. Aliquam ex risus, luctus vel lacinia rutrum, tincidunt et justo. Integer ultrices lectus eu dui volutpat rhoncus. Aliquam erat volutpat.</p>
+            </article>
+
+          </section>
+          <section class="grid">
+
+            <article class="size1of3">
+              <h4>3-column article</h4>
+              <p>Ut et metus dolor. Phasellus vulputate, arcu non ultrices facilisis, quam dui tempor libero, ut blandit enim nisl sit amet nisl. Cras rhoncus risus at ante dapibus, sit amet mollis turpis accumsan. Proin et velit quis ipsum euismod rhoncus ac et augue. Praesent finibus risus ipsum, sit amet eleifend est condimentum nec. Praesent lobortis odio a tristique vehicula. Donec venenatis tellus eros, in convallis tellus gravida et. Praesent eu elit vitae nulla tristique varius. Aliquam nulla purus, efficitur sed faucibus vitae, tincidunt eu libero. Quisque euismod feugiat lorem et ullamcorper. Nunc et diam et sem venenatis consectetur eget eu erat.</p>
+            </article>
+            <article class="size1of3">
+              <h4>3-column article</h4>
+              <p>Aliquam nec tortor sed justo tempus mattis. Mauris ut auctor risus. Proin leo nunc, fringilla sit amet sollicitudin a, porta in eros. Suspendisse semper, nulla quis sodales lobortis, magna tellus mattis purus, vel volutpat purus arcu et quam. Cras eget finibus orci. Sed condimentum quam orci, non pharetra metus laoreet ut. Mauris id odio gravida, sollicitudin felis sit amet, venenatis dolor. Morbi sed imperdiet felis, suscipit scelerisque est. Maecenas imperdiet suscipit condimentum. Vestibulum quis vestibulum risus, volutpat lobortis felis.</p>
+            </article>
+            <article class="size1of3">
+              <h4>3-column article</h4>
+              <p>Sed auctor leo sit amet vehicula feugiat. Integer tristique eleifend ttacerat. Ut et ante non elit lacinia consequat ac in lectus. Nunc sed ex aliquet, vestibulum erat vitae, rhoncus nunc. Suspendisse eleifend velit a eros mattis dignissim sed ut dui. Donec in aliquam mauris. Etiam viverra pharetra diam, in finibus purus condimentum vitae. Ut interdum metus dolor, ac lacinia est scelerisque a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec quis erat non sem cursus congue. Vivamus eget pulvinar libero. Aenean id eros vehicula, laoreet mi nec, feugiat libero. Cras sodales neque quis libero rutrum, a ttacerat neque tempus.</p>
+            </article>
+          </section>
+
+        </section>
+      </div>
+
+      <footer>
+        <div class="content">
+          Created by <a href="http://joblee.ca">Job Lee</a> and Gordon Huang. For IAT 339 Web Design and Development | <a href="citations.html">Citations</a> | <a href="styleguide.html">Styleguide</a> | <a target="_blank" href="https://github.com/YoshiJL/iat339p02">Git Repository</a>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+
+  </body>
+</html>

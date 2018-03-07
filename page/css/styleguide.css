@@ -1,0 +1,13 @@
+.colour-palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colour-palette div {
+  flex: 1;
+  padding: .5rem .75rem;
+}
+
+.colour-palette small {
+  font-weight: bold;
+}
