@@ -274,9 +274,15 @@ footer .content {
 
 /* Hero */
 .hero {
-  background: url("https://www.kumon.com/assets/images/home_header_img.jpg") center center/cover no-repeat;
+  background: #6dcff6 center center/cover no-repeat;
   color: #ffffff;
 }
+
+.hero.home { background-image: url("img/home_header_img.jpg"); }
+.hero.math { background-image: url("img/math_header_img.jpg"); }
+.hero.reading { background-image: url("img/reading_header_img.jpg"); }
+.hero.plus { background-image: url("img/plus_header_img.jpg"); }
+.hero.contact { background-image: url("img/contact_header_img.jpg"); }
 
 .hero .content {
   margin-top: 0;
